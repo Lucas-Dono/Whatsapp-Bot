@@ -1,0 +1,17 @@
+{
+  "name": "cerveceria-developer-tools",
+  "version": "1.0.0",
+  "description": "Herramientas para desarrolladores de la Cervecería 6600",
+  "type": "module",
+  "main": "publish-update.js",
+  "scripts": {
+    "publish": "node publish-update.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 

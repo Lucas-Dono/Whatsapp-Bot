@@ -1,0 +1,373 @@
+# ============================================
+# GITIGNORE - Cervecería 6600 WhatsApp Bot
+# ============================================
+# Este archivo protege código sensible y lógica de negocio
+# mientras permite usar el proyecto como portafolio/muestra
+
+# ============================================
+# ARCHIVOS SENSIBLES Y CONFIGURACIÓN
+# ============================================
+
+# Variables de entorno (CRÍTICO - contiene API keys)
+.env
+.env.local
+.env.development
+.env.production
+.env.*.local
+
+# Archivos de configuración del frontend
+cerveceria-admin-ui/src/config.js
+cerveceria-admin-ui/.env.local
+cerveceria-admin-ui/src/.env
+
+# ============================================
+# LÓGICA DE NEGOCIO - CÓDIGO PROPIETARIO
+# ============================================
+
+# Lógica principal del bot (PROTEGIDO)
+src/bot.js
+
+# Servicios con lógica de negocio (PROTEGIDO)
+src/services/audioService.js
+src/services/classificationService.js
+src/services/conversationService.js
+src/services/feedbackService.js
+src/services/mediaService.js
+src/services/notificationService.js
+src/services/openaiService.js
+src/services/partnerService.js
+src/services/phoneService.js
+src/services/sheetsService.js
+src/services/userService.js
+
+# Prompts personalizados (PROTEGIDO)
+src/utils/prompts.js
+
+# Rutas de API con lógica específica (PROTEGIDO)
+routes/bot.js
+routes/cervezas.js
+routes/orders.js
+routes/prompts.js
+src/routes/update-api.js
+
+# API routes principal
+src/apiroutes.js
+
+# Información de negocios asociados
+src/data/partner_info.json
+
+# ============================================
+# DATOS Y ALMACENAMIENTO
+# ============================================
+
+# Datos de conversaciones
+data/
+data/**/*.json
+
+# Catálogo de productos
+cervezas.json
+backend/src/utils/offers.json
+
+# Backups
+backups/
+backup.js
+
+# Historial y migraciones
+migrateContacts.js
+
+# ============================================
+# DEPENDENCIAS Y CACHE
+# ============================================
+
+# Node modules
+node_modules/
+*/node_modules/
+package-lock.json
+*/package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# WHATSAPP WEB SESSION
+# ============================================
+
+# Autenticación de WhatsApp (CRÍTICO)
+.wwebjs_auth/
+.wwebjs_cache/
+.wwebjs_data/
+
+# Archivos de sesión
+session/
+auth_info/
+
+# ============================================
+# ACTUALIZACIONES
+# ============================================
+
+# Servidor de actualizaciones
+src/update-server.js
+src/start-update-server.js
+
+# Archivos de actualización
+updates/
+*.zip
+
+# Herramientas de desarrollo
+developer-tools/publish-update.js
+
+# Sistema de actualizaciones GitHub
+src/github-updater.js
+src/start-github-updater.js
+
+# ============================================
+# PYTHON Y SCRIPTS
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Script de transcripción
+src/python/speech_to_text.py
+
+# Virtual env
+venv/
+ENV/
+env/
+
+# ============================================
+# IDE Y EDITORES
+# ============================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ============================================
+# SISTEMA OPERATIVO
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================
+# FRONTEND (React)
+# ============================================
+
+# Build
+cerveceria-admin-ui/build/
+cerveceria-admin-ui/.cache/
+
+# Testing
+cerveceria-admin-ui/coverage/
+
+# Components con lógica específica (PROTEGIDO)
+cerveceria-admin-ui/src/components/Dashboard.js
+cerveceria-admin-ui/src/components/OrdersPanel.js
+cerveceria-admin-ui/src/components/OrdersDesktop.js
+cerveceria-admin-ui/src/components/OrdersMobile.js
+cerveceria-admin-ui/src/components/ProductManagement.js
+cerveceria-admin-ui/src/components/PromptsManagement.js
+
+# API client con endpoints (PROTEGIDO)
+cerveceria-admin-ui/src/api.js
+
+# Hooks personalizados
+cerveceria-admin-ui/src/hooks/useCervezas.js
+
+# App principal
+cerveceria-admin-ui/src/App.js
+
+# ============================================
+# PM2
+# ============================================
+
+# Logs de PM2
+.pm2/
+pm2.log
+
+# ============================================
+# ARCHIVOS TEMPORALES
+# ============================================
+
+# Temporales generales
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Media temporal
+*.ogg
+*.mp3
+*.wav
+media/
+
+# ============================================
+# CERTIFICADOS Y SEGURIDAD
+# ============================================
+
+# Certificados SSL
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+
+# Credenciales
+credentials.json
+service-account.json
+
+# ============================================
+# TESTING
+# ============================================
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# ============================================
+# DOCUMENTACIÓN A NO COMPARTIR (OPCIONAL)
+# ============================================
+
+# Si hay documentación con información sensible
+# docs/internal/
+# NOTAS_PRIVADAS.md
+
+# ============================================
+# EXCEPCIONES - Archivos a INCLUIR
+# ============================================
+
+# Estos archivos SÍ se incluyen en el repositorio
+# (usa ! para negar el ignore)
+
+# Archivos de ejemplo
+!.env.example
+!src/bot.example.js
+!src/services/*.example.js
+!src/utils/prompts.example.js
+
+# README y documentación pública
+!README*.md
+!DOCUMENTACION_MEJORADA.md
+!*.md
+
+# Configuración de proyecto
+!package.json
+!ecosystem.config.cjs
+
+# Scripts de inicio (sin lógica sensible)
+!src/index.js
+!src/pre-start.js
+!src/network-start.js
+!src/update-frontend-config.js
+
+# Estructura de frontend (archivos básicos)
+!cerveceria-admin-ui/package.json
+!cerveceria-admin-ui/public/index.html
+!cerveceria-admin-ui/src/index.js
+
+# Git
+!.gitignore
+!.gitattributes
+
+# ============================================
+# NOTAS
+# ============================================
+#
+# Este .gitignore protege:
+# 1. Lógica de negocio propietaria
+# 2. Configuraciones y credenciales
+# 3. Datos de clientes y conversaciones
+# 4. Sesiones de WhatsApp
+# 5. Componentes específicos del frontend
+#
+# Permite compartir:
+# 1. Estructura del proyecto
+# 2. Documentación
+# 3. Configuración básica
+# 4. Archivos de ejemplo
+# 5. Scripts de utilidad no sensibles
+#
+# Para uso como portafolio:
+# - Crea archivos .example con estructura pero sin lógica
+# - Documenta funcionalidades sin exponer implementación
+# - Usa README detallados para mostrar capacidades
+#
+# ============================================

@@ -1,0 +1,30 @@
+{
+  "offerText": "¡¡Solo por hoy tenemos descuento de 15% en barriles y en la docena de botellas de dorada y scotish!! El precio del cajón de 12 botellas quedaría en: 41.820 pesos. Todos los descuentos ya fueron aplicados.",
+  "deliveryPrice": 6000,
+  "icePrice": 8000,
+  "paymentAlias": "6600microcerveceria",
+  "paymentRecipient": "Arturo Alejandro Puga",
+  "specialInstructions": "Para pedidos de eventos especiales, consultar disponibilidad con al menos una semana de anticipación.",
+  "categories": {
+    "alquilerBarriles": {
+      "title": "Alquiler de Barriles",
+      "description": "Especializado en el Alquiler de Barriles"
+    },
+    "reservarMesa": {
+      "title": "Reserva de Mesas",
+      "description": "Especializado en Reservas de Mesa en nuestro bar"
+    },
+    "puertasAdentro": {
+      "title": "Puertas Adentro",
+      "description": "Especializado en Puertas Adentro (alquiler completo del bar)"
+    },
+    "negociosAmigos": {
+      "title": "Negocios Amigos",
+      "description": "Especializado en recomendaciones de Negocios Amigos"
+    },
+    "regaleria": {
+      "title": "Regalería",
+      "description": "Especializado en productos de merchandising y regalería"
+    }
+  }
+} 

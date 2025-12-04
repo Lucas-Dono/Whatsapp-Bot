@@ -1,0 +1,43 @@
+{
+  "alquilerBarriles": [
+    {
+      "id": "1680123456789",
+      "title": "15% de descuento en barriles Clásicos",
+      "description": "Oferta especial en todos los barriles de cervezas Clásicas (Dorada y Scotish).",
+      "offerType": "por_litro",
+      "beerCategory": "clasicas",
+      "beerTypes": [
+        "Dorada",
+        "Scotish"
+      ],
+      "regularPrice": "3000",
+      "discountPercentage": 15,
+      "salePrice": "2550.00",
+      "validUntil": "30 de abril",
+      "active": true
+    },
+    {
+      "id": "1680123456790",
+      "title": "Pack 12 botellas Dorada/Scotish",
+      "description": "Combo especial de 12 botellas de 1 litro de Dorada y Scotish por un precio especial.",
+      "offerType": "combo",
+      "beerCategory": "clasicas",
+      "beerTypes": [
+        "Dorada",
+        "Scotish"
+      ],
+      "quantity": 12,
+      "packageType": "Botella de un litro",
+      "regularPrice": 60000,
+      "discountPercentage": 30,
+      "salePrice": 41820,
+      "validUntil": "30 de abril",
+      "active": true
+    }
+  ],
+  "reservarMesa": [],
+  "puertasAdentro": [],
+  "negociosAmigos": [],
+  "regaleria": [],
+  "otro": []
+}
